@@ -9,6 +9,7 @@ namespace Employees
     class Manager:Employee
     {
         public int StockOption { get; set; }
+        public Manager() : base() { }
         public Manager(string fullName, int age, int empID, float currPay, string ssn, int numpOfOpts):base(fullName, age, empID, currPay, ssn)
         {
             ID = empID;
